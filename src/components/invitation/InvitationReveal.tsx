@@ -1,6 +1,7 @@
 import { invitation } from "@/data/invitation";
 import WeddingStage from "./WeddingStage";
 import CurtainReveal from "./CurtainReveal";
+import ScratchReveal from "./ScratchReveal";
 
 export default function InvitationReveal() {
   const { couple, event, messages } = invitation;
@@ -90,6 +91,7 @@ export default function InvitationReveal() {
           We look forward to celebrating with you.
         </p>
       </section>
+      <ScratchReveal />
     </main>
   );
 }
