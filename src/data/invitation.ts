@@ -7,9 +7,11 @@ export const invitation = {
   event: {
     title: "Wedding Celebration",
     date: "25 December 2026",
+    dateTime: "2026-12-25T19:00:00+05:30",
     time: "7:00 PM onwards",
     venue: "Your Wedding Venue",
     address: "Your Venue Address",
+    mapsQuery: "Your Wedding Venue, Your City, India",
   },
 
   messages: {
