@@ -35,6 +35,16 @@ export const invitation = {
       description: "An evening of food, joy and togetherness.",
     },
   ],
+  families: {
+    bride: {
+      label: "Daughter of",
+      names: "Bride's Father & Mother",
+    },
+    groom: {
+      label: "Son of",
+      names: "Groom's Father & Mother",
+    },
+  },
 
   messages: {
     invitation: "Together with their families",

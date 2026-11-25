@@ -8,7 +8,7 @@ import EventSchedule from "./EventSchedule";
 import RSVPSection from "./RSVPSection";
 
 export default function InvitationReveal() {
-  const { couple, event, messages } = invitation;
+  const { couple, event, messages, families } = invitation;
 
   return (
     <main className="relative isolate flex min-h-svh flex-col overflow-hidden">
@@ -38,6 +38,27 @@ export default function InvitationReveal() {
         <h2 className="font-heading text-5xl font-medium italic text-[#4d4938]">
           {couple.secondName}
         </h2>
+
+        {/* Family details */}
+        <div className="mt-7 grid w-full grid-cols-2 gap-5">
+          <div>
+            <p className="font-body text-[9px] uppercase tracking-[0.15em] text-[#927a55]">
+              {families.bride.label}
+            </p>
+            <p className="mt-2 font-heading text-base italic text-[#655c49]">
+              {families.bride.names}
+            </p>
+          </div>
+
+          <div>
+            <p className="font-body text-[9px] uppercase tracking-[0.15em] text-[#927a55]">
+              {families.groom.label}
+            </p>
+            <p className="mt-2 font-heading text-base italic text-[#655c49]">
+              {families.groom.names}
+            </p>
+          </div>
+        </div>
 
         <div className="mt-7 space-y-1 font-heading text-sm italic text-[#75694f]">
           <p>{messages.invitation}</p>
@@ -95,6 +116,7 @@ export default function InvitationReveal() {
           We look forward to celebrating with you.
         </p>
       </section>
+
       <ScratchReveal />
       <WeddingCountdown />
       <VenueSection />
