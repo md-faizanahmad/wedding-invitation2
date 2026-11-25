@@ -1,6 +1,7 @@
 import { invitation } from "@/data/invitation";
 import FloralDecoration from "./FloralDecoration";
 import InvitationBackdrop from "./InvitationBackdrop";
+import CurtainReveal from "./CurtainReveal";
 
 export default function InvitationReveal() {
   const { couple, event, messages } = invitation;
@@ -8,7 +9,7 @@ export default function InvitationReveal() {
   return (
     <main className="relative flex min-h-svh items-center justify-center overflow-hidden px-6 py-20">
       <InvitationBackdrop />
-
+      <CurtainReveal />
       {/* Floral decorations */}
       <FloralDecoration className="absolute -left-8 top-0 z-2 w-40 opacity-80 sm:w-64" />
 
