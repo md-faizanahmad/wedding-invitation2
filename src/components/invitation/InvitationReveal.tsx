@@ -1,11 +1,14 @@
 import { invitation } from "@/data/invitation";
+import InvitationBackdrop from "./InvitationBackdrop";
 
 export default function InvitationReveal() {
   const { couple, event, messages } = invitation;
 
   return (
-    <main className="relative flex min-h-svh items-center justify-center overflow-hidden bg-[#f8f5ec] px-6 py-16">
-      <div className="pointer-events-none absolute inset-4 border border-[#c9c1a5] sm:inset-8" />
+    <main className="relative flex min-h-svh items-center justify-center overflow-hidden px-6 py-20">
+      <InvitationBackdrop />
+
+      <div className="pointer-events-none absolute inset-4 z-[1] border border-white/50 sm:inset-8" />
 
       <section className="relative z-10 mx-auto w-full max-w-xl text-center">
         <p className="font-body text-[10px] uppercase tracking-[0.35em] text-[#8b9273]">
