@@ -13,6 +13,28 @@ export const invitation = {
     address: "Your Venue Address",
     mapsQuery: "Your Wedding Venue, Your City, India",
   },
+  schedule: [
+    {
+      time: "10:00 AM",
+      title: "Haldi Ceremony",
+      description: "A beautiful beginning filled with colours and blessings.",
+    },
+    {
+      time: "04:00 PM",
+      title: "Wedding Procession",
+      description: "Join us as we celebrate the arrival of the groom.",
+    },
+    {
+      time: "07:00 PM",
+      title: "Wedding Ceremony",
+      description: "Witness the beautiful union of two souls.",
+    },
+    {
+      time: "08:30 PM",
+      title: "Dinner & Celebration",
+      description: "An evening of food, joy and togetherness.",
+    },
+  ],
 
   messages: {
     invitation: "Together with their families",
