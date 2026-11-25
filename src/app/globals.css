@@ -32,8 +32,8 @@
   --color-border: #ded7c9;
 
   /* Typography */
-  --font-heading: Georgia, serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-heading: var(--font-cormorant), Georgia, serif;
+  --font-body: var(--font-montserrat), Arial, sans-serif;
 }
 
 /* =========================================
