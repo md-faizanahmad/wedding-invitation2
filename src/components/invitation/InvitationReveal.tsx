@@ -1,4 +1,5 @@
 import { invitation } from "@/data/invitation";
+import FloralDecoration from "./FloralDecoration";
 import InvitationBackdrop from "./InvitationBackdrop";
 
 export default function InvitationReveal() {
@@ -8,10 +9,24 @@ export default function InvitationReveal() {
     <main className="relative flex min-h-svh items-center justify-center overflow-hidden px-6 py-20">
       <InvitationBackdrop />
 
-      <div className="pointer-events-none absolute inset-4 z-[1] border border-white/50 sm:inset-8" />
+      {/* Floral decorations */}
+      <FloralDecoration className="absolute -left-8 top-0 z-2 w-40 opacity-80 sm:w-64" />
 
+      <FloralDecoration
+        flip
+        className="absolute -right-8 top-0 z-2 w-40 opacity-80 sm:w-64"
+      />
+
+      <FloralDecoration
+        flip
+        className="absolute -bottom-8 left-0 z-2 w-36 rotate-180 opacity-70 sm:w-56"
+      />
+
+      <FloralDecoration className="absolute -bottom-8 right-0 z-2 w-36 rotate-180 opacity-70 sm:w-56" />
+
+      {/* Invitation content */}
       <section className="relative z-10 mx-auto w-full max-w-xl text-center">
-        <p className="font-body text-[10px] uppercase tracking-[0.35em] text-[#8b9273]">
+        <p className="font-body text-[10px] uppercase tracking-[0.35em] text-[#687454]">
           {messages.invitation}
         </p>
 
@@ -25,7 +40,7 @@ export default function InvitationReveal() {
 
         <div className="mx-auto my-8 h-px w-20 bg-[#c9b990]" />
 
-        <p className="font-body text-xs uppercase tracking-[0.25em] text-[#8b9273]">
+        <p className="font-body text-xs uppercase tracking-[0.25em] text-[#687454]">
           The wedding of
         </p>
 
@@ -35,7 +50,7 @@ export default function InvitationReveal() {
           {couple.secondName}
         </p>
 
-        <div className="mt-8 space-y-2 font-body text-sm text-[#817d70]">
+        <div className="mt-8 space-y-2 font-body text-sm text-[#625e52]">
           <p>{event.date}</p>
           <p>{event.time}</p>
           <p className="pt-3 font-medium">{event.venue}</p>
