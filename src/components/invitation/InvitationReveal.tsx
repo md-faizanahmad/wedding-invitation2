@@ -5,6 +5,7 @@ import ScratchReveal from "./ScratchReveal";
 import WeddingCountdown from "./WeddingCountdown";
 import VenueSection from "./VenueSection";
 import EventSchedule from "./EventSchedule";
+import RSVPSection from "./RSVPSection";
 
 export default function InvitationReveal() {
   const { couple, event, messages } = invitation;
@@ -98,6 +99,7 @@ export default function InvitationReveal() {
       <WeddingCountdown />
       <VenueSection />
       <EventSchedule />
+      <RSVPSection />
     </main>
   );
 }
